@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Citizen Management App</title>
+	
+	<link rel="stylesheet" href="../assets/mdl/material.min.css">
+	<link rel="stylesheet" href="../assets/mdl/get-mdl-select.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+      <link rel='manifest' href='../manifest.json'>
+
+</head>
+
+<body style="background-color: rgb(241,247,252);">
+
+ 
+
+
+
+<div class="container">
+<div class="owl-carousel carousel-1">
+	
+	<div class="item disable-owl-swipe padding-10">
+	<div class="mdl-card mdl-shadow--4dp util-center util-spacing-h--40px margin-auto" style="margin-top: calc(50vh - 210px)">
+        <div class="mdl-card__title purple-bg">
+            <h2 class="mdl-card__title-text mdl-color-text--white">User Login</h2>
+        </div>
+        <div class="mdl-card__supporting-text mdl-grid">
+          
+            <font class="mdl-color-text--red">Error message goes here</font>
+          
+
+            <form>
+                <input type="hidden" name="action" value="login"/>
+
+
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                    <label class="mdl-textfield__label mdl-color-text--grey" for="signin_phone">Phone</label>
+                    <input class="mdl-textfield__input" type="text" id="signin_phone" name="phone"/>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                    <label class="mdl-textfield__label mdl-color-text--grey" for="signin_pass">Password</label>
+                    <input class="mdl-textfield__input" type="password" id="signin_pass" name="password"/>
+
+                </div>
+</form>
+                <div class="mdl-cell mdl-cell--12-col send-button" align="center">
+
+                    <button type="submit"  class="signin_btn mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored mdl-color--primary">
+                        Log In
+                    </button>
+                </div>
+
+            
+
+        </div>
+		<center><div class='owl-buttons customNextBtn'><a href="#" class='mdl-navigation__link'>Dont have account? Register</a></div></center>
+		<br>
+		
+</div>
+	</div>
+	
+	<div class="item disable-owl-swipe padding-10">
+	<div class="mdl-card mdl-shadow--4dp util-center util-spacing-h--40px margin-auto" style="margin-top: calc(50vh - 210px)">
+        <div class="mdl-card__title purple-bg">
+            <h2 class="mdl-card__title-text mdl-color-text--white">User Signup</h2>
+        </div>
+        <div class="mdl-card__supporting-text mdl-grid">
+          <div class="owl-carousel carousel-2">
+		  <div class="item disable-owl-swipe">
+            <font class="mdl-color-text--red signup_error_1" style='display:none'>Please enter correct Phone Number.</font>
+          
+
+            <form>
+               
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                    <label class="mdl-textfield__label mdl-color-text--grey" for="phone_signup">Phone</label>
+                    <input class="mdl-textfield__input" type="text" maxlength="10" pattern="-?[0-9]*(\.[0-9]+)?" id="phone_signup"/>
+                </div>
+            </form>
+			
+			 <div class="mdl-cell mdl-cell--12-col send-button" align="center">
+
+                    <button type="submit"  class="signup_1_btn customNextBtn_2 mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored mdl-color--primary">
+                       Next
+                    </button>
+                </div>
+				
+				
+			</div>
+			
+			 <div class="item disable-owl-swipe">
+            <font class="mdl-color-text--red">Error message goes here</font>
+          
+
+            <form>
+                <input type="hidden" name="action" value="login"/>
+
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                    <label class="mdl-textfield__label mdl-color-text--grey" for="textfield_name">OTP</label>
+                    <input class="mdl-textfield__input otp-data" style="letter-spacing: 0.9rem;" maxlength="8" type="text" id="textfield_name" name="otp"/>
+                </div>
+				
+             
+            </form>
+			 <div class="mdl-cell mdl-cell--12-col" align="center">
+			 <button type="submit" class="customPreviousBtn signup_back_btn  mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored mdl-color--grey">
+                       Back
+                    </button>
+			 <button type="submit"  class="verify-otp-btn customNextBtn_2 mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored mdl-color--primary">
+                       Next
+                    </button>
+				</div>
+				
+			</div>
+			
+			<div class="item disable-owl-swipe">
+            <font class="mdl-color-text--red">Error message goes here</font>
+          
+
+            <form>
+                <input type="hidden" name="action" value="login"/>
+ 
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                    <label class="mdl-textfield__label mdl-color-text--grey" for="name_signup">Name</label>
+                    <input class="mdl-textfield__input" type="text" id="name_signup"/>
+                </div>
+				
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                    <label class="mdl-textfield__label mdl-color-text--grey" for="textfield_name">Choose Password</label>
+                    <input class="mdl-textfield__input" type="password" id="password_signup"/>
+                </div>
+				</form>
+              <div class="mdl-cell mdl-cell--12-col send-button" align="center">
+
+			 <button type="submit"  class="signup_complt_done_btn customNextBtn_2 mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored mdl-color--primary">
+                       Done
+                    </button>
+				</div>
+				
+            
+			 	
+			</div>
+			
+			</div>
+
+        </div>
+		<center><div class='owl-buttons customPreviousBtn'><a href="#" class='mdl-navigation__link'>Already have account? Login</a></div></center>
+		<br>
+</div>
+
+	</div>
+	
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/mdl/material.min.js"></script>
+	<script src="../assets/mdl/get-mdl-select.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+$(document).ready(function(){
+  var owl = $('.carousel-1');
+  owl.owlCarousel({
+    loop:false,
+    nav:false,
+    items: 1,
+  });
+  
+  // Custom Button
+  $('.customNextBtn').click(function() {
+    owl.trigger('next.owl.carousel');
+  });
+  $('.customPreviousBtn_1').click(function() {
+    owl.trigger('prev.owl.carousel');
+  });
+  
+
+});
+
+
+
+
+$(document).ready(function(){
+  var owl = $('.carousel-2');
+  owl.owlCarousel({
+    loop:false,
+    nav:false,
+    items: 1,
+  });
+  
+  // Custom Button
+  $('.customNextBtn_2').click(function() {
+    owl.trigger('next.owl.carousel');
+  });
+  $('.customPreviousBtn').click(function() {
+    owl.trigger('prev.owl.carousel');
+  });
+
+});
+ $(".disable-owl-swipe").on("touchstart mousedown", function(e) {
+     // Prevent carousel swipe
+     e.stopPropagation();
+});
+
+
+$('.signup_1_btn').click(function(){
+$.post('send-otp.php',{ phone: $('#phone_signup').val()},function(output){
+if(output==1){
+}else{}
+});
+});
+
+
+$('.verify-otp-btn').click(function(){
+$.post('verify-otp.php',{ otp: $('.otp-data').val()},function(output){
+if(output==1){
+}else{}
+});
+});
+
+$('.signup_complt_done_btn').click(function(){
+$.post('set-info.php',{ name: $('#name_signup').val(), pass: $('#password_signup').val()},function(output){
+if(output==1){
+$(location).attr('href', '../');
+}else{}
+});
+});
+
+
+$('.signin_btn').click(function(){
+$.post('start_session/',{ phone: $('#signin_phone').val(), pass: $('#signin_pass').val()},function(output){
+if(output==1){
+$(location).attr('href', '../');
+}else{}
+});
+});
+
+</script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate"></script>
+<script>
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+
+	</script>
+
+</body>
+
+</html>

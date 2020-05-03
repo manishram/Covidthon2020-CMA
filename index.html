@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Citizen Management App</title>
+	
+	<link rel="stylesheet" href="assets/mdl/material.min.css">
+	<link rel="stylesheet" href="assets/mdl/get-mdl-select.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	  <link rel='manifest' href='/manifest.json'>
+</head>
+
+<body style="background-color: rgb(241,247,252);">
+<!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Public App</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Home</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Report</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab 3rd-tab-link">COVID</a>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+  </div>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content padding-10" >
+	  
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris sagittis pellentesque lacus eleifend lacinia...
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+	  
+	  
+	  </div>
+	  <div class="page-content padding-10" >
+	   <!-- Your content goes here -->
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris sagittis pellentesque lacus eleifend lacinia...
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+	  
+	  
+	  </div></section>
+    
+	
+	
+	
+	
+	
+	<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content padding-10">
+	  <!-- Your content goes here -->
+	 
+	 <div class="mdl-card mdl-shadow--4dp margin-auto demo-card-wide mdl-card" style="max-width:700px;" >
+  <div class="mdl-card__media purple-bg" >
+<div class="mdl-card__title">
+     <span class=" mdl-color-text--white">REPORT FOR CHECKUP</span>
+  </div>
+  </div>
+  
+  
+  <div class="mdl-card__supporting-text">
+  <form id="report_checkup_for">
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="full_name" placeholder="Full Name of Victim" pattern="[A-Z,a-z, ]*">
+  <span class="mdl-textfield__error">Letters and spaces only</span>
+</div>
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="f_or_g_name" placeholder="Father's/Guardian Name" pattern="[A-Z,a-z, ]*">
+  <span class="mdl-textfield__error">Letters and spaces only</span>
+</div>
+
+
+  <div class="mdl-textfield mdl-js-textfield getmdl-select">
+      <input class="mdl-textfield__input" value="" id="gender" placeholder="Gender" readonly/>
+      <input value="" type="hidden" name="gender"/>
+	  
+      <label class="mdl-textfield__label" for="gender">Gender</label>
+      <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="country">
+        <li class="mdl-menu__item" data-val="male">Male</li>
+        <li class="mdl-menu__item" data-val="female">Female</li>
+        <li class="mdl-menu__item" data-val="other">Other</li>
+      </ul>
+	  
+   </div>
+			   <div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="age" placeholder="Age" pattern="[0-9, ]*">
+  <label class="mdl-textfield__label" for="age">Age</label>
+  <span class="mdl-textfield__error">Numbers only</span>
+</div>
+			
+
+           
+   
+<div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="victim_phone" placeholder="Victim's Phone Number" pattern="[0-9, ]*">
+  <span class="mdl-textfield__error">Numbers only</span>
+</div>
+
+ <div class="mdl-textfield mdl-js-textfield getmdl-select">
+      <input class="mdl-textfield__input" value="" id="state" placeholder="State" readonly/>
+      <input value="" type="hidden" name="state"/>
+      <label class="mdl-textfield__label" for="state">State</label>
+      <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="country">
+        <li class="mdl-menu__item" data-val="jharkhand">Jharkhand</li>
+      </ul>
+   </div>
+   
+    <div class="mdl-textfield mdl-js-textfield getmdl-select">
+      <input class="mdl-textfield__input" value="" id="district" placeholder="District" readonly/>
+      <input value="" type="hidden" name="district"/>
+      <label class="mdl-textfield__label" for="district">District</label>
+      <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="country">
+        <li class="mdl-menu__item" data-val="khunti">Khunti</li>
+      </ul>
+   </div>
+   
+   <div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="address" placeholder="Victim's Address">
+</div>
+
+
+
+ <div class="mdl-textfield mdl-js-textfield" style="width:100%;">
+    <textarea class="mdl-textfield__input" type="text" rows= "2" id="description" placeholder="Any Description (Optional)" ></textarea>
+  </div>
+</form>
+<br>
+<center>
+<button class="report-checkup-btn mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+  Submit 
+</button></center>
+
+</div>
+</div>
+	 
+	  </div>
+    </section>
+	
+	
+	
+	
+	
+    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+      <div class="page-content 3rd-tab-content" >
+	  <!-- Your content goes here -->
+	  </div>
+    </section>
+	
+	
+	
+  </main>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/mdl/material.min.js"></script>
+	<script src="assets/mdl/get-mdl-select.min.js"></script>
+<script>
+$('body').delegate('.3rd-tab-link','click',function(){
+$.get('checkup_report_history/',{},function(output){
+$('.3rd-tab-content').empty();
+$('.3rd-tab-content').append(output);
+});
+});
+
+$('.report-checkup-btn').click(function(){
+$.post("report_checkup/",{
+full_name: $('#full_name').val(), 
+f_or_g_name: $('#f_or_g_name').val(),
+gender:$('#gender').val(), 
+age:$('#age').val(),
+victim_phone:$('#victim_phone').val(),
+state:$('#state').val(),
+district:$('#district').val(),
+address:$('#address').val(),
+description:$('#description').val()
+},function(output){
+if(output==1){$('#report_checkup_for').trigger("reset");}else{}
+});
+});	
+
+
+$(document).ready(function(){
+$.get('check_session/',{},function(output){
+if(output==1){}else{$(location).attr('href', 'account/');}
+});
+});
+</script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate"></script>
+<script>
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+
+	</script>
+</body>
+
+</html>
